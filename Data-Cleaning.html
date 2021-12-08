@@ -210,6 +210,12 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
 
@@ -506,7 +512,7 @@ The interval function allows you to calculate an interval between 2 timepoints. 
 <pre class="r"><code>data$current &lt;- rep(Sys.time(), nrow(data))
 
 data$current[1]</code></pre>
-<pre><code>## [1] &quot;2021-12-08 15:48:33 PST&quot;</code></pre>
+<pre><code>## [1] &quot;2021-12-08 15:58:05 PST&quot;</code></pre>
 <p>Now that we’re here, I might as well talk about the <code>rep</code> command. This stands for “repeat” and is a good way to create repetitions in R. Right now, I’m saying make a new variable called <code>current</code> and fill it with a series of the current date and time, for the number of rows in <code>data</code>.</p>
 <p>Back to substring. We’re gonna use the command <code>substr()</code> to keep only the date (2021-12-07). The arguments read: 1) what do we want to subset 2) at which character do we start 3) at which character do we stop. Since the date starts at 1 and ends at 10, we’ll go ahead and put those arguments in.</p>
 <pre class="r"><code>data$current_date&lt;- substr(data$current,1,10)
@@ -582,7 +588,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
+    options.showAndHide = false;
     options.smoothScroll = true;
 
     // tocify
