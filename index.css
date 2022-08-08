@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body {
+    position: relative;
+    display: grid;
+    grid-template-rows: 80px 600px 1600px;
+    grid-template-areas: "header" "intro""consultants";
+}
+
+/*HEADER/NAV BAR*/
+
+.nav {
+    background-color: rgb(234, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .dropdown .dropbtn {
+  font-size: 25px;
+}
+
+a:link { text-decoration: none;}
+a:visited { text-decoration: none; }
+a:hover { color: #1464e3;
+  text-decoration: underline;}
+a:active { text-decoration: none; }
+
+.nav a {
+    float: left;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0;
+  }
+
+  /*header a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }*/
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 106px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/*INTRO SECTION*/
+
+.intro {
+    display: flex;
+    grid-area: "intro";
+    background: linear-gradient(to top, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("background.jpg");
+    background-size: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+
+.intro div {
+    display: flexbox;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+    background: linear-gradient(to top, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+}
+
+.intro h1 {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.intro #welcome {
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-size: 25px;
+}
+
+/*Who We Are*/
+.Consultants {
+  display: grid;
+  grid-template-rows: 150px 600px 800px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main" "Leadership" "Students";
+  margin: 5px;
+}
+
+.Consultants #main {
+  grid-area: main;
+  height: 150px;
+  font-size: 2.7em;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*LEADERSHIP*/
+
+.Leadership {
+  grid-area: Leadership;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title" "content";
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.Leadership header {
+  grid-area: title;
+  display: flex;
+  /*height: 150px;*/
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  justify-content: center;
+}
+
+.Leadership .profiles {
+  grid-area: content;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Faculty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  width: 40%;
+  background:rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px rgba(0,0,0,0.2);
+  margin-bottom: 35px;
+}
+
+.Faculty .pic img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 1.7em;
+}
+
+/*STUDENTS*/
+
+.students {
+  grid-area: Students;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "title" "consultants"
+}
+
+.students header {
+  grid-area: title;
+  text-align: center;
+  font-size: 2em;
+}
+
+.consults {
+  grid-area: consultants;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+.consultant {
+/*  border: 1px solid blue;*/
+  margin: 5px;
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consultant img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/*.pic {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: 50% 10%;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+}
+
+
+#Joe img {
+  object-position: 0px -25px;
+}*/
