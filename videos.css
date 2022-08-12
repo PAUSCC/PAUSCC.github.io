@@ -73,3 +73,73 @@ a:active { text-decoration: none; }
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+  /*Intro*/
+  .intro {
+    display: flex;
+    grid-area: "intro";
+    background: linear-gradient(to top, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("background.jpg");
+    background-size: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+
+.intro div {
+    display: flexbox;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+    background: linear-gradient(to top, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+}
+
+.intro h1 {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.intro #welcome {
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+/*Videos*/
+.Videos h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.Video {
+  margin: 5px;
+  padding: 30px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.video{
+  display: flex;
+  object-fit: contain;
+  padding-bottom: 20px;
+}
+
+.creator {
+  text-align: center;
+  padding: 15px;
+}
+
+.description {
+  letter-spacing: 1pz;
+  line-height: 1.5;
+}
