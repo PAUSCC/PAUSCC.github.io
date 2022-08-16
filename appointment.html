@@ -20,13 +20,68 @@
         <a href="pauscc.github.io/appointment.html">Request an appointment</a>
     </header>
     <section class="intro">
-        <div id="welcome">
+        <div class="welcome">
             <h1>Appointment Request</h1><br><br>
             <p class="thanks">
                 Thank you for choosing Palo Alto University's Statistics Consultation Center! We are excited to work with you on your next project and look forward to meeting with you! <br>
                 Please review our policies as some may have changed since your last consultation. If you have any questions, please feel free to email our Student Director Kate Hedbabny at <a href="khedbabny@paloaltou.edu">khedbabny@paloaltou.edu</a> 
-            </p>
+            </p> <br>
+            <button class="main-btn">Request an Appointment</button>
         </div>
     </section>
+    <div class="modal" id="rules">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="m-content">
+                <h2>SCC Consultation Policies & Procedures</h2> <br>
+                <p>
+                    <li>
+                        Prior to starting the form please have ready: your hypotheses and proposed analyses,
+                        vaiables (i.e. IV, DV, moderators, mediators, etc.), scale of your variables (i.e.
+                        continuous, categoical, ordinal, count), and structure of your data (i.e. 
+                        repeated measures, pre- post-test, composite score vs individual indicators)
+                    </li>
+                    <li>
+                        Upon completion of form, your responses will be reviewed by the student director. 
+                        During this processess you may receive an email asking for additional information 
+                        in order to assist you.
+                    </li>
+                    <li>
+                        When the student director has all information, you will be assigned to a 
+                        statistics consultant. Please allow for up to 1 week for assignment. 
+                    </li>
+                    <li>
+                        You will then need to contact the consultant to schedule your first meeting.
+                        Please allow up to 1 week for the first meeting with your consultant.
+                    </li>
+                    <li>
+                        You are allotted <strong>6 hours</strong> of total consultation; the first 
+                        meeting will be up to 1 hour and is intended for the consultant to develop
+                        an understanding of your project and your specific needs. You will then have
+                        5 hours of consultation after the initial meeting. This can be utilized at 
+                        your, and your consultants discretion.
+                    </li> <br>
+                    <h3>For Dissertations</h3> <br>
+                    In order to maintain the acacdemic integrity of the dissertation process, we do not 
+                    provide direct consultation for statistics software question. Our consultants are not 
+                    allowed to review syntax, troubleshoot technical errors, or help write any code on your
+                    behalf. If you are seeking such support we recommend visiting the following websites:
+                    <li><a href="https://stackoverflow.com/">stackoverflow</a> for R & RStudio</li>
+                    <li><a href="http://www.statmodel.com/">statmodel</a> for MPLUS</li>
+                    <li><a href="https://statistics.laerd.com/">Laerd Statistics</a> for SPSS</li> <br>
+                </p>
+                <div class="form">
+                    <form action="https://paloaltou.co1.qualtrics.com/jfe/form/SV_3Fan8TY09OPWZMO">
+                        <div class="checkbox">
+                            <input type="checkbox" name="acknowledge" id="acknowledge" required> by checking this box
+                            I acknowledge that I have read and understand the policies & procedures as outlined above
+                        </div> <br>
+                        <button type="submit" id="form">Schedule a Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="appointment.js"></script>
 </body>
 </html>
