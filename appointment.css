@@ -73,3 +73,103 @@ a:active { text-decoration: none; }
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /*INTRO*/
+  .intro {
+    display: flex;
+    grid-area: "intro";
+    background: linear-gradient(to top, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("background.jpg");
+    background-size: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+
+.intro div {
+    display: flexbox;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+    background: linear-gradient(to top, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+}
+
+.intro h1 {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.intro .welcome {
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-size: 25px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  height:50px;
+  width: 300px;
+  border-radius: 5px;
+  color: white;
+  background-color: #1464e3;
+  margin:0;
+  font-size: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*POP UP*/
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, .2);
+  display: none;
+}
+
+.modal-content {
+  background: #f4f4f4;
+  margin: 10% auto;
+  width: 75%;
+  height: 450px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 0px 0 rgba(0, 0, 0, .2);
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  object-fit: contain;
+  overflow-y: scroll;
+}
+
+.m-content {
+  width: 100%;
+}
+
+.m-content h2 {
+  text-align: center;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.form  form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+form .checkbox {
+  text-align: center;
+}
