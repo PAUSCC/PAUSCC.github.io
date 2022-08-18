@@ -153,6 +153,10 @@ button:hover {
 
 .m-content {
   width: 100%;
+  font-size: 1em;
+  letter-spacing: 1;
+  line-height: 1.5;
+  padding: 5px;
 }
 
 .m-content h2 {
