@@ -177,3 +177,31 @@ button:hover {
 form .checkbox {
   text-align: center;
 }
+
+@media screen and (max-width: 768px){
+  .nav .dropdown .dropbtn {
+    font-size: 1em;
+    width: 150px;
+  }
+
+  .nav a {
+    font-size: 1em;
+  }
+
+  .intro {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .intro .welcome {
+    margin: 0;
+    width: 90%;
+    font-size: 1.2em;
+  }
+
+  .modal-content {
+    height: 600px;
+    width: 90%;
+    font-size: .7em
+  }
+}
