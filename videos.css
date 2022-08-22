@@ -143,3 +143,33 @@ a:active { text-decoration: none; }
   letter-spacing: 1pz;
   line-height: 1.5;
 }
+
+@media screen and (max-width: 768px){
+  .nav .dropdown .dropbtn {
+    font-size: 1em;
+  }
+
+  .nav a {
+    font-size: 1em;
+  }
+
+  .intro {
+    display: flex; 
+    justify-content: center;
+  }
+
+  .intro div {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .Video .video{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
