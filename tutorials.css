@@ -133,3 +133,24 @@ a:active { text-decoration: none; }
   padding: 15px;
 }
 
+@media screen and (max-width: 768px){
+  .nav a {
+    font-size: 1em;
+  }
+
+  .nav .dropdown .dropbtn {
+    font-size: 1em;
+  }
+  
+  .intro {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro div {
+    width: 80%;
+    margin: 0;
+  }
+}
