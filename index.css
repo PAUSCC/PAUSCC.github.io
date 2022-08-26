@@ -256,7 +256,7 @@ footer {
   body {
     position: relative;
     display: grid;
-    grid-template-rows: 80px 900px 2100px 80px;
+    grid-template-rows: 80px 900px 100% 80px;
     grid-template-areas: "header" "intro""consultants" "footer";
 }
 
@@ -281,7 +281,7 @@ footer {
 
   .Consultants {
     display: grid;
-    grid-template-rows: 150px 1000px 900px;
+    grid-template-rows: 150px 1000px 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "main" "Leadership" "Students";
     margin: 5px;
